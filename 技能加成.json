@@ -1,5 +1,5 @@
 {
-    "place": 20,
+    "seats": 22,
     "in_use": [
         "jushiqiangsheng",
         "stevenzhou",
@@ -24,24 +24,24 @@
         "nilisi",
         "atangge"
     ],
-    "heros": {
+    "heroes": {
         "jushiqiangsheng": {
             "name": "巨石强森",
             "color": 4,
             "additions": [{
-                    "heros": ["atangge"],
+                    "heroes": ["atangge"],
                     "value": 10
                 }, {
-                    "heros": ["tangni", "aima"],
+                    "heroes": ["tangni", "aima"],
                     "value": 15
                 }, {
-                    "heros": ["kelisiwu", "liudawei"],
+                    "heroes": ["kelisiwu", "liudawei"],
                     "value": 15
                 }, {
-                    "heros": ["stevenzhou", "jiangmuyan", "weieng", "dinggong"],
+                    "heroes": ["stevenzhou", "jiangmuyan", "weieng", "dinggong"],
                     "value": 18
                 }, {
-                    "heros": ["yinshi", "zixia"],
+                    "heroes": ["yinshi", "zixia"],
                     "value": 18
                 }
             ]
@@ -50,16 +50,16 @@
             "name": "钉宫",
             "color": 3,
             "additions": [{
-                    "heros": ["gakki"],
+                    "heroes": ["gakki"],
                     "value": 10
                 }, {
-                    "heros": ["yuner", "xiuyan"],
+                    "heroes": ["yuner", "xiuyan"],
                     "value": 10
                 }, {
-                    "heros": ["yinbao", "fengxiaomo", "natali"],
+                    "heroes": ["yinbao", "fengxiaomo", "natali"],
                     "value": 12
                 }, {
-                    "heros": ["stevenzhou", "jushiqiangsheng", "jiangmuyan", "weieng"],
+                    "heroes": ["stevenzhou", "jushiqiangsheng", "jiangmuyan", "weieng"],
                     "value": 18
                 }
             ]
@@ -68,19 +68,19 @@
             "name": "韦恩",
             "color": 3,
             "additions": [{
-                    "heros": ["tangni"],
+                    "heroes": ["tangni"],
                     "value": 10
                 }, {
-                    "heros": ["natali", "younisi"],
+                    "heroes": ["natali", "younisi"],
                     "value": 10
                 }, {
-                    "heros": ["meiqi", "gongdashi", "aima"],
+                    "heroes": ["meiqi", "gongdashi", "aima"],
                     "value": 12
                 }, {
-                    "heros": ["stevenzhou", "jushiqiangsheng", "jiangmuyan", "dinggong"],
+                    "heroes": ["stevenzhou", "jushiqiangsheng", "jiangmuyan", "dinggong"],
                     "value": 18
                 }, {
-                    "heros": ["maonv"],
+                    "heroes": ["maonv"],
                     "value": 12
                 }
             ]
@@ -89,19 +89,19 @@
             "name": "唐尼",
             "color": 4,
             "additions": [{
-                    "heros": ["weieng"],
+                    "heroes": ["weieng"],
                     "value": 10
                 }, {
-                    "heros": ["jushiqiangsheng", "aima"],
+                    "heroes": ["jushiqiangsheng", "aima"],
                     "value": 15
                 }, {
-                    "heros": ["stevenzhou", "jiangmuyan", "mishu"],
+                    "heroes": ["stevenzhou", "jiangmuyan", "mishu"],
                     "value": 18
                 }, {
-                    "heros": ["lihong", "liudawei", "meiqi", "xiuyan"],
+                    "heroes": ["lihong", "liudawei", "meiqi", "xiuyan"],
                     "value": 18
                 }, {
-                    "heros": ["caomao", "jiaozhu"],
+                    "heroes": ["caomao", "jiaozhu"],
                     "value": 18
                 }
             ]
@@ -110,19 +110,19 @@
             "name": "斯蒂芬周",
             "color": 4,
             "additions": [{
-                    "heros": ["guyuege", "pangdi"],
+                    "heroes": ["guyuege", "pangdi"],
                     "value": 12
                 }, {
-                    "heros": ["lihong", "kelisiwu"],
+                    "heroes": ["lihong", "kelisiwu"],
                     "value": 15
                 }, {
-                    "heros": ["tangni", "jiangmuyan", "mishu"],
+                    "heroes": ["tangni", "jiangmuyan", "mishu"],
                     "value": 18
                 }, {
-                    "heros": ["jushiqiangsheng", "jiangmuyan", "weieng", "dinggong"],
+                    "heroes": ["jushiqiangsheng", "jiangmuyan", "weieng", "dinggong"],
                     "value": 18
                 }, {
-                    "heros": ["zixia"],
+                    "heroes": ["zixia"],
                     "value": 15
                 }
             ]
@@ -131,16 +131,16 @@
             "name": "安杰拉杨",
             "color": 3,
             "additions": [{
-                    "heros": ["meiqi"],
+                    "heroes": ["meiqi"],
                     "value": 8
                 }, {
-                    "heros": ["mimi", "yinbao"],
+                    "heroes": ["mimi", "yinbao"],
                     "value": 10
                 }, {
-                    "heros": ["jiekeman", "lige", "yuner"],
+                    "heroes": ["jiekeman", "lige", "yuner"],
                     "value": 12
                 }, {
-                    "heros": ["qiyulaoshi", "pangdi"],
+                    "heroes": ["qiyulaoshi", "pangdi"],
                     "value": 12
                 }
             ]
@@ -149,22 +149,22 @@
             "name": "姜暮烟",
             "color": 4,
             "additions": [{
-                    "heros": ["mishu"],
+                    "heroes": ["mishu"],
                     "value": 12
                 }, {
-                    "heros": ["taile", "pangdi"],
+                    "heroes": ["taile", "pangdi"],
                     "value": 15
                 }, {
-                    "heros": ["stevenzhou", "tangni", "mishu"],
+                    "heroes": ["stevenzhou", "tangni", "mishu"],
                     "value": 18
                 }, {
-                    "heros": ["stevenzhou", "jushiqiangsheng", "weieng", "dinggong"],
+                    "heroes": ["stevenzhou", "jushiqiangsheng", "weieng", "dinggong"],
                     "value": 18
                 }, {
-                    "heros": ["wujie", "zixia"],
+                    "heroes": ["wujie", "zixia"],
                     "value": 18
                 }, {
-                    "heros": ["shiyuan", "dujiaoshou"],
+                    "heroes": ["shiyuan", "dujiaoshou"],
                     "value": 20
                 }
             ]
@@ -173,22 +173,22 @@
             "name": "gakki",
             "color": 4,
             "additions": [{
-                    "heros": ["dinggong"],
+                    "heroes": ["dinggong"],
                     "value": 10
                 }, {
-                    "heros": ["mishu", "liudawei"],
+                    "heroes": ["mishu", "liudawei"],
                     "value": 15
                 }, {
-                    "heros": ["lihong", "taile"],
+                    "heroes": ["lihong", "taile"],
                     "value": 15
                 }, {
-                    "heros": ["wujie", "yinbao"],
+                    "heroes": ["wujie", "yinbao"],
                     "value": 15
                 }, {
-                    "heros": ["maonv", "xiaoqing"],
+                    "heroes": ["maonv", "xiaoqing"],
                     "value": 18
                 }, {
-                    "heros": ["shiyuan", "songyinvwang"],
+                    "heroes": ["shiyuan", "songyinvwang"],
                     "value": 20
                 }
             ]
@@ -197,16 +197,16 @@
             "name": "杰克曼",
             "color": 3,
             "additions": [{
-                    "heros": ["sijiali"],
+                    "heroes": ["sijiali"],
                     "value": 5
                 }, {
-                    "heros": ["atangge", "dabiaojie"],
+                    "heroes": ["atangge", "dabiaojie"],
                     "value": 10
                 }, {
-                    "heros": ["angelayang", "lige", "yuner"],
+                    "heroes": ["angelayang", "lige", "yuner"],
                     "value": 12
                 }, {
-                    "heros": ["nvxia"],
+                    "heroes": ["nvxia"],
                     "value": 12
                 }
             ]
@@ -215,13 +215,13 @@
             "name": "娜塔莉",
             "color": 3,
             "additions": [{
-                    "heros": ["juanfu"],
+                    "heroes": ["juanfu"],
                     "value": 5
                 }, {
-                    "heros": ["weieng", "nilisi"],
+                    "heroes": ["weieng", "nilisi"],
                     "value": 10
                 }, {
-                    "heros": ["yinbao", "fengxiaomo", "dinggong"],
+                    "heroes": ["yinbao", "fengxiaomo", "dinggong"],
                     "value": 12
                 }
             ]
@@ -230,16 +230,16 @@
             "name": "秀妍",
             "color": 3,
             "additions": [{
-                    "heros": ["fuyuanai"],
+                    "heroes": ["fuyuanai"],
                     "value": 5
                 }, {
-                    "heros": ["yuner", "dinggong"],
+                    "heroes": ["yuner", "dinggong"],
                     "value": 10
                 }, {
-                    "heros": ["mimi", "dabiaojie", "nilisi"],
+                    "heroes": ["mimi", "dabiaojie", "nilisi"],
                     "value": 12
                 }, {
-                    "heros": ["lihong", "tangni", "liudawei", "meiqi"],
+                    "heroes": ["lihong", "tangni", "liudawei", "meiqi"],
                     "value": 18
                 }
             ]
@@ -248,16 +248,16 @@
             "name": "冯小莫",
             "color": 3,
             "additions": [{
-                    "heros": ["xiaotong"],
+                    "heroes": ["xiaotong"],
                     "value": 5
                 }, {
-                    "heros": ["pengaidi", "meiqi"],
+                    "heroes": ["pengaidi", "meiqi"],
                     "value": 10
                 }, {
-                    "heros": ["yinbao", "natali", "dinggong"],
+                    "heroes": ["yinbao", "natali", "dinggong"],
                     "value": 12
                 }, {
-                    "heros": ["taile", "nvxia"],
+                    "heroes": ["taile", "nvxia"],
                     "value": 15
                 }
             ]
@@ -266,16 +266,16 @@
             "name": "大表姐",
             "color": 3,
             "additions": [{
-                    "heros": ["sijiali"],
+                    "heroes": ["sijiali"],
                     "value": 5
                 }, {
-                    "heros": ["atangge", "jiekeman"],
+                    "heroes": ["atangge", "jiekeman"],
                     "value": 10
                 }, {
-                    "heros": ["mimi", "nilisi", "xiuyan"],
+                    "heroes": ["mimi", "nilisi", "xiuyan"],
                     "value": 12
                 }, {
-                    "heros": ["kelisiwu", "maonv"],
+                    "heroes": ["kelisiwu", "maonv"],
                     "value": 15
                 }
             ]
@@ -284,19 +284,19 @@
             "name": "克里斯吴",
             "color": 4,
             "additions": [{
-                    "heros": ["pangdi"],
+                    "heroes": ["pangdi"],
                     "value": 12
                 }, {
-                    "heros": ["stevenzhou", "lihong"],
+                    "heroes": ["stevenzhou", "lihong"],
                     "value": 15
                 }, {
-                    "heros": ["jushiqiangsheng", "liudawei"],
+                    "heroes": ["jushiqiangsheng", "liudawei"],
                     "value": 15
                 }, {
-                    "heros": ["maonv", "dabiaojie"],
+                    "heroes": ["maonv", "dabiaojie"],
                     "value": 15
                 }, {
-                    "heros": ["taile", "jiaozhu"],
+                    "heroes": ["taile", "jiaozhu"],
                     "value": 18
                 }
             ]
@@ -305,16 +305,16 @@
             "name": "美琪",
             "color": 3,
             "additions": [{
-                    "heros": ["angelayang"],
+                    "heroes": ["angelayang"],
                     "value": 8
                 }, {
-                    "heros": ["pengaidi", "fengxiaomo"],
+                    "heroes": ["pengaidi", "fengxiaomo"],
                     "value": 10
                 }, {
-                    "heros": ["weieng", "gongdashi", "aima"],
+                    "heroes": ["weieng", "gongdashi", "aima"],
                     "value": 12
                 }, {
-                    "heros": ["lihong", "tangni", "liudawei", "xiuyan"],
+                    "heroes": ["lihong", "tangni", "liudawei", "xiuyan"],
                     "value": 18
                 }
             ]
@@ -323,16 +323,16 @@
             "name": "妮莉丝",
             "color": 3,
             "additions": [{
-                    "heros": ["douseng"],
+                    "heroes": ["douseng"],
                     "value": 5
                 }, {
-                    "heros": ["weieng", "natali"],
+                    "heroes": ["weieng", "natali"],
                     "value": 10
                 }, {
-                    "heros": ["mimi", "dabiaojie", "xiuyan"],
+                    "heroes": ["mimi", "dabiaojie", "xiuyan"],
                     "value": 12
                 }, {
-                    "heros": ["caomao", "aima"],
+                    "heroes": ["caomao", "aima"],
                     "value": 12
                 }
             ]
@@ -341,13 +341,13 @@
             "name": "李哥",
             "color": 3,
             "additions": [{
-                    "heros": ["jinguangzhang"],
+                    "heroes": ["jinguangzhang"],
                     "value": 5
                 }, {
-                    "heros": ["gongdashi", "mucun"],
+                    "heroes": ["gongdashi", "mucun"],
                     "value": 10
                 }, {
-                    "heros": ["angelayang", "jiekeman", "yuner"],
+                    "heroes": ["angelayang", "jiekeman", "yuner"],
                     "value": 12
                 }
             ]
@@ -356,16 +356,16 @@
             "name": "颖宝",
             "color": 3,
             "additions": [{
-                    "heros": ["xiaotong"],
+                    "heroes": ["xiaotong"],
                     "value": 5
                 }, {
-                    "heros": ["mimi", "angelayang"],
+                    "heroes": ["mimi", "angelayang"],
                     "value": 10
                 }, {
-                    "heros": ["fengxiaomo", "natali", "dinggong"],
+                    "heroes": ["fengxiaomo", "natali", "dinggong"],
                     "value": 12
                 }, {
-                    "heros": ["gakki", "wujie"],
+                    "heroes": ["gakki", "wujie"],
                     "value": 15
                 }
             ]
@@ -374,16 +374,16 @@
             "name": "允儿",
             "color": 3,
             "additions": [{
-                    "heros": ["fuyuanai"],
+                    "heroes": ["fuyuanai"],
                     "value": 5
                 }, {
-                    "heros": ["xiuyan", "dinggong"],
+                    "heroes": ["xiuyan", "dinggong"],
                     "value": 10
                 }, {
-                    "heros": ["angelayang", "jiekeman", "lige"],
+                    "heroes": ["angelayang", "jiekeman", "lige"],
                     "value": 12
                 }, {
-                    "heros": ["wujie"],
+                    "heroes": ["wujie"],
                     "value": 12
                 }
             ]
@@ -392,13 +392,13 @@
             "name": "幂幂",
             "color": 3,
             "additions": [{
-                    "heros": ["liuyan"],
+                    "heroes": ["liuyan"],
                     "value": 5
                 }, {
-                    "heros": ["yinbao", "angelayang"],
+                    "heroes": ["yinbao", "angelayang"],
                     "value": 10
                 }, {
-                    "heros": ["dabiaojie", "nilisi", "xiuyan"],
+                    "heroes": ["dabiaojie", "nilisi", "xiuyan"],
                     "value": 12
                 }
             ]
@@ -407,19 +407,19 @@
             "name": "胖迪",
             "color": 4,
             "additions": [{
-                    "heros": ["kelisiwu"],
+                    "heroes": ["kelisiwu"],
                     "value": 12
                 }, {
-                    "heros": ["guyuege", "stevenzhou"],
+                    "heroes": ["guyuege", "stevenzhou"],
                     "value": 12
                 }, {
-                    "heros": ["taile", "jiangmuyan"],
+                    "heroes": ["taile", "jiangmuyan"],
                     "value": 15
                 }, {
-                    "heros": ["angelayang", "qiyulaoshi"],
+                    "heroes": ["angelayang", "qiyulaoshi"],
                     "value": 12
                 }, {
-                    "heros": ["lihong", "xiaoqian"],
+                    "heroes": ["lihong", "xiaoqian"],
                     "value": 18
                 }
             ]
@@ -428,13 +428,13 @@
             "name": "古月歌",
             "color": 3,
             "additions": [{
-                    "heros": ["lihong"],
+                    "heroes": ["lihong"],
                     "value": 10
                 }, {
-                    "heros": ["stevenzhou", "pangdi"],
+                    "heroes": ["stevenzhou", "pangdi"],
                     "value": 12
                 }, {
-                    "heros": ["pengaidi", "atangge", "mucun"],
+                    "heroes": ["pengaidi", "atangge", "mucun"],
                     "value": 12
                 }
             ]
@@ -443,16 +443,16 @@
             "name": "木村",
             "color": 3,
             "additions": [{
-                    "heros": ["shanp"],
+                    "heroes": ["shanp"],
                     "value": 5
                 }, {
-                    "heros": ["gongdashi", "lige"],
+                    "heroes": ["gongdashi", "lige"],
                     "value": 10
                 }, {
-                    "heros": ["pengaidi", "guyuege", "atangge"],
+                    "heroes": ["pengaidi", "guyuege", "atangge"],
                     "value": 12
                 }, {
-                    "heros": ["yinshi", "mishu"],
+                    "heroes": ["yinshi", "mishu"],
                     "value": 12
                 }
             ]
@@ -461,13 +461,13 @@
             "name": "阿汤哥",
             "color": 3,
             "additions": [{
-                    "heros": ["jushiqiangsheng"],
+                    "heroes": ["jushiqiangsheng"],
                     "value": 10
                 }, {
-                    "heros": ["jiekeman", "dabiaojie"],
+                    "heroes": ["jiekeman", "dabiaojie"],
                     "value": 10
                 }, {
-                    "heros": ["pengaidi", "guyuege", "mucun"],
+                    "heroes": ["pengaidi", "guyuege", "mucun"],
                     "value": 12
                 }
             ]
@@ -476,16 +476,16 @@
             "name": "宫大师",
             "color": 3,
             "additions": [{
-                    "heros": ["liudawei"],
+                    "heroes": ["liudawei"],
                     "value": 10
                 }, {
-                    "heros": ["lige", "mucun"],
+                    "heroes": ["lige", "mucun"],
                     "value": 10
                 }, {
-                    "heros": ["meiqi", "weieng", "aima"],
+                    "heroes": ["meiqi", "weieng", "aima"],
                     "value": 12
                 }, {
-                    "heros": ["qiyulaoshi"],
+                    "heroes": ["qiyulaoshi"],
                     "value": 10
                 }
             ]
@@ -494,19 +494,19 @@
             "name": "泰勒",
             "color": 4,
             "additions": [{
-                    "heros": ["aima"],
+                    "heroes": ["aima"],
                     "value": 12
                 }, {
-                    "heros": ["pangdi", "jiangmuyan"],
+                    "heroes": ["pangdi", "jiangmuyan"],
                     "value": 15
                 }, {
-                    "heros": ["lihong", "gakki"],
+                    "heroes": ["lihong", "gakki"],
                     "value": 15
                 }, {
-                    "heros": ["nvxia", "fengxiaomo"],
+                    "heroes": ["nvxia", "fengxiaomo"],
                     "value": 15
                 }, {
-                    "heros": ["kelisiwu", "jiaozhu"],
+                    "heroes": ["kelisiwu", "jiaozhu"],
                     "value": 18
                 }
             ]
@@ -515,13 +515,13 @@
             "name": "彭艾迪",
             "color": 3,
             "additions": [{
-                    "heros": ["xinye"],
+                    "heroes": ["xinye"],
                     "value": 5
                 }, {
-                    "heros": ["meiqi", "fengxiaomo"],
+                    "heroes": ["meiqi", "fengxiaomo"],
                     "value": 10
                 }, {
-                    "heros": ["guyuege", "atangge", "mucun"],
+                    "heroes": ["guyuege", "atangge", "mucun"],
                     "value": 12
                 }
             ]
@@ -530,19 +530,19 @@
             "name": "力宏",
             "color": 3,
             "additions": [{
-                    "heros": ["guyuege"],
+                    "heroes": ["guyuege"],
                     "value": 10
                 }, {
-                    "heros": ["stevenzhou", "kelisiwu"],
+                    "heroes": ["stevenzhou", "kelisiwu"],
                     "value": 15
                 }, {
-                    "heros": ["taile", "gakki"],
+                    "heroes": ["taile", "gakki"],
                     "value": 15
                 }, {
-                    "heros": ["tangni", "liudawei", "meiqi", "xiuyan"],
+                    "heroes": ["tangni", "liudawei", "meiqi", "xiuyan"],
                     "value": 18
                 }, {
-                    "heros": ["pangdi", "xiaoqian"],
+                    "heroes": ["pangdi", "xiaoqian"],
                     "value": 18
                 }
             ]
@@ -551,19 +551,19 @@
             "name": "艾玛",
             "color": 3,
             "additions": [{
-                    "heros": ["taile"],
+                    "heroes": ["taile"],
                     "value": 12
                 }, {
-                    "heros": ["tangni", "jushiqiangsheng"],
+                    "heroes": ["tangni", "jushiqiangsheng"],
                     "value": 15
                 }, {
-                    "heros": ["meiqi", "weieng", "gongdashi"],
+                    "heroes": ["meiqi", "weieng", "gongdashi"],
                     "value": 12
                 }, {
-                    "heros": ["caomao", "nilisi"],
+                    "heroes": ["caomao", "nilisi"],
                     "value": 12
                 }, {
-                    "heros": ["maonv", "xiaoqian"],
+                    "heroes": ["maonv", "xiaoqian"],
                     "value": 18
                 }
             ]
