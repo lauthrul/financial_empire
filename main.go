@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"os"
 	"strconv"
 	"time"
 
-	"jinrongdiguo/config"
-	"jinrongdiguo/util"
+	"financial_empire/config"
+	"financial_empire/util"
 )
 
 func timeCost() func() {
@@ -20,10 +21,24 @@ func timeCost() func() {
 	}
 }
 
+func showResult(result config.Addition, cfg config.Config) {
+	show := config.Addition{
+		Value:result.Value,
+	}
+	for _, h := range result.Heroes {
+		for name, hero := range cfg.Heroes {
+			if h == name {
+				show.Heroes = append(show.Heroes, hero.Name)
+			}
+		}
+	}
+	fmt.Println(show)
+}
+
 func main() {
 
 	usage := func() {
-		// ./jinrongdiguo 10
+		// ./financial_empire 10
 		fmt.Printf("param error. \nusage: %s <thread_nums>", os.Args[0])
 	}
 
@@ -42,7 +57,7 @@ func main() {
 
 	// load config
 	var cfg config.Config
-	err = config.LoadConfig("技能加成.json", &cfg)
+	err = config.LoadConfig("config.json", &cfg)
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -77,7 +92,7 @@ func main() {
 					}
 				}
 				if match {
-					value += hero.Color * 100 * (1 + addition.Value/100)
+					value += int(math.Pow(float64(hero.Color), float64(10))) * (1 + addition.Value/100)
 				}
 			}
 		}
@@ -86,7 +101,7 @@ func main() {
 			result.Heroes = group
 		}
 	}
-	fmt.Println(result)
+	showResult(result, cfg)
 
 	// make suggestion for add new heroes and remove old heroes
 	var add, remove []string

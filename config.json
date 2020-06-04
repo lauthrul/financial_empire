@@ -528,7 +528,7 @@
         },
         "lihong": {
             "name": "力宏",
-            "color": 3,
+            "color": 4,
             "additions": [{
                     "heroes": ["guyuege"],
                     "value": 10
@@ -549,7 +549,7 @@
         },
         "aima": {
             "name": "艾玛",
-            "color": 3,
+            "color": 4,
             "additions": [{
                     "heroes": ["taile"],
                     "value": 12
