@@ -50,7 +50,7 @@ func LoadConfig(file string, config *Config) error {
 		return err
 	}
 	if config.Seats != len(config.InUse) {
-		return fmt.Errorf("invalid config: heroes in use not match seats")
+		return fmt.Errorf("heroes in use not match seats")
 	}
 	return nil
 }

@@ -1,6 +1,7 @@
 package util
 
 import (
+	"fmt"
 	"sync"
 )
 
@@ -31,6 +32,8 @@ func Combination(set []string, size int, threads int) (subsets [][]string) {
 			end = total
 		}
 		go func(th, from, end int) {
+			fmt.Printf("[#%03d] [%d, %d) (%d)\n", th, from, end, end - from)
+
 			for bit := from; bit < end; bit++ {
 				// fmt.Printf("[%d] %0.2f%%\r", th, float64((bit-from)*100)/float64(end-from))
 				var subset []string

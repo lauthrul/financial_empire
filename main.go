@@ -7,9 +7,12 @@ import (
 	"strconv"
 	"time"
 
+	"financial_empire/cache"
 	"financial_empire/config"
 	"financial_empire/util"
 )
+
+const USE_CACHE = false
 
 func timeCost() func() {
 	start := time.Now()
@@ -39,7 +42,7 @@ func main() {
 
 	usage := func() {
 		// ./financial_empire 10
-		fmt.Printf("param error. \nusage: %s <thread_nums>", os.Args[0])
+		fmt.Printf("param error. \nusage: %s <thread_nums>\n", os.Args[0])
 	}
 
 	if len(os.Args) < 2 {
@@ -59,7 +62,7 @@ func main() {
 	var cfg config.Config
 	err = config.LoadConfig("config.json", &cfg)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Printf("load config fail: %s\n", err.Error())
 		return
 	}
 	// fmt.Println(cfg)
@@ -69,7 +72,35 @@ func main() {
 	for name, _ := range cfg.Heroes {
 		names = append(names, name)
 	}
-	combinations := util.Combination(names, cfg.Seats, threads)
+
+	var combinations [][]string
+	var cch cache.Cache
+
+	if USE_CACHE {
+		err = cache.LoadCache(&cch)
+		if err != nil {
+			fmt.Printf("load cache fail: %s\n", err.Error())
+		} else {
+			if cch.Exist(names) {
+				fmt.Printf("read cache\n")
+				err = cch.Read(names, &combinations)
+				if err != nil {
+					fmt.Printf("read cache fail: %s\n", err.Error())
+				}
+			}
+		}
+	}
+
+
+	if len(combinations) <= 0{
+		combinations = util.Combination(names, cfg.Seats, threads)
+		if USE_CACHE {
+			err = cch.Save(names, combinations)
+			if err != nil {
+				fmt.Printf("save cache fail: %s\n", err.Error())
+			}
+		}
+	}
 	// fmt.Println(combinations)
 
 	// choose the highest score heroes from all the combinations
