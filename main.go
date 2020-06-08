@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"math"
 	"os"
 	"strconv"
 	"time"
 
 	"financial_empire/cache"
 	"financial_empire/config"
+	"financial_empire/logger"
 	"financial_empire/util"
 )
 
@@ -16,17 +16,15 @@ const USE_CACHE = false
 
 func timeCost() func() {
 	start := time.Now()
-	fmt.Println(start)
 	return func() {
-		end := time.Now()
 		tc := time.Since(start)
-		fmt.Printf("%v\ntime cost = %v\n", end, tc)
+		logger.Logger.Printf("time cost = %v\n", tc)
 	}
 }
 
 func showResult(result config.Addition, cfg config.Config) {
 	show := config.Addition{
-		Value:result.Value,
+		Value: result.Value,
 	}
 	for _, h := range result.Heroes {
 		for name, hero := range cfg.Heroes {
@@ -35,22 +33,23 @@ func showResult(result config.Addition, cfg config.Config) {
 			}
 		}
 	}
-	fmt.Println(show)
+	logger.Logger.Println(show)
 }
 
 func main() {
 
 	usage := func() {
 		// ./financial_empire 10
-		fmt.Printf("param error. \nusage: %s <thread_nums>\n", os.Args[0])
+		fmt.Printf("usage: %s <config_file> <thread_nums>\n", os.Args[0])
 	}
 
-	if len(os.Args) < 2 {
+	if len(os.Args) < 3 {
 		usage()
 		return
 	}
 
-	threads, err := strconv.Atoi(os.Args[1])
+	configFile := os.Args[1]
+	threads, err := strconv.Atoi(os.Args[2])
 	if err != nil || threads < 1 {
 		usage()
 		return
@@ -59,15 +58,17 @@ func main() {
 	defer timeCost()()
 
 	// load config
+	logger.Logger.Printf("load config ...")
 	var cfg config.Config
-	err = config.LoadConfig("config.json", &cfg)
+	err = config.LoadConfig(configFile, &cfg)
 	if err != nil {
-		fmt.Printf("load config fail: %s\n", err.Error())
+		logger.Logger.Printf("load config fail: %s\n", err.Error())
 		return
 	}
-	// fmt.Println(cfg)
+	// log.Logger.Println(cfg)
 
 	// gen all combinations within the given thread numbers
+	logger.Logger.Printf("calculate combinations ...")
 	var names []string
 	for name, _ := range cfg.Heroes {
 		names = append(names, name)
@@ -79,31 +80,31 @@ func main() {
 	if USE_CACHE {
 		err = cache.LoadCache(&cch)
 		if err != nil {
-			fmt.Printf("load cache fail: %s\n", err.Error())
+			logger.Logger.Printf("load cache fail: %s\n", err.Error())
 		} else {
 			if cch.Exist(names) {
-				fmt.Printf("read cache\n")
+				logger.Logger.Printf("read cache\n")
 				err = cch.Read(names, &combinations)
 				if err != nil {
-					fmt.Printf("read cache fail: %s\n", err.Error())
+					logger.Logger.Printf("read cache fail: %s\n", err.Error())
 				}
 			}
 		}
 	}
 
-
-	if len(combinations) <= 0{
-		combinations = util.Combination(names, cfg.Seats, threads)
+	if len(combinations) <= 0 {
+		util.Combination(names, uint64(cfg.Seats), uint64(threads), &combinations)
 		if USE_CACHE {
 			err = cch.Save(names, combinations)
 			if err != nil {
-				fmt.Printf("save cache fail: %s\n", err.Error())
+				logger.Logger.Printf("save cache fail: %s\n", err.Error())
 			}
 		}
 	}
-	// fmt.Println(combinations)
+	// log.Logger.Println(combinations)
 
 	// choose the highest score heroes from all the combinations
+	logger.Logger.Printf("choose best solution ...")
 	var result config.Addition
 	for _, group := range combinations {
 		nameMap := map[string]bool{}
@@ -135,6 +136,7 @@ func main() {
 	showResult(result, cfg)
 
 	// make suggestion for add new heroes and remove old heroes
+	logger.Logger.Printf("make suggestion ...")
 	var add, remove []string
 	for _, name := range result.Heroes {
 		if hero, ok := cfg.Heroes[name]; ok && !cfg.IsInUse(name) {
@@ -156,5 +158,5 @@ func main() {
 			remove = append(remove, hero.Name)
 		}
 	}
-	fmt.Printf("suggestion:\n add: %v\n remove: %v\n", add, remove)
+	logger.Logger.Printf("suggestion:\n add: %v\n remove: %v\n", add, remove)
 }
